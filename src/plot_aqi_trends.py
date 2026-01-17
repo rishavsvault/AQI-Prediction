@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Load CSV
-df = pd.read_csv("ML_Project_monthly aqi (2015-2024).csv")
+df = pd.read_csv("data/ML_Project_monthly aqi (2015-2024).csv")
 
 # Convert Month to datetime
 df["Month"] = pd.to_datetime(df["Month"])
