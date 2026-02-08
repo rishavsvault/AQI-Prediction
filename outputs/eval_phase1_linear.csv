@@ -1,6 +1,6 @@
 RMSE,MAE,City,Phase
-99.8,83.49,Bangalore,Eval-2022-24
-104.42,87.8,Chennai,Eval-2022-24
-102.04,86.21,Delhi,Eval-2022-24
-105.02,90.1,Kolkata,Eval-2022-24
-98.85,81.95,Mumbai,Eval-2022-24
+99.51,83.82,Bangalore,Eval-2024
+105.62,88.4,Chennai,Eval-2024
+101.76,85.34,Delhi,Eval-2024
+105.72,90.33,Kolkata,Eval-2024
+101.87,84.87,Mumbai,Eval-2024
