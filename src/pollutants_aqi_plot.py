@@ -24,7 +24,7 @@ for city in cities:
     
     # Calculate Monthly Average for all columns
     # 'M' stands for month-end frequency
-    monthly_df = city_df[metrics].resample('M').mean()
+    monthly_df = city_df[metrics].resample('ME').mean()
     
     # ENLARGE THE PLOT: Set to a massive scale for clarity
     plt.figure(figsize=(24, 12))
