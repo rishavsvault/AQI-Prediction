@@ -7,7 +7,7 @@ import os
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
 
-file_path = os.path.join(current_directory, 'Air_quality_data.csv')
+file_path = os.path.join(current_directory, 'data', 'Air_quality_data.csv')
 
 df = pd.read_csv(file_path)
 
