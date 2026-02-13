@@ -15,7 +15,7 @@ if not os.path.exists(output_dir):
 # -------------------------------------------------
 # LOAD DATA
 # -------------------------------------------------
-monthly_aqi_df = pd.read_csv("data/Air_quality_data.csv")
+monthly_aqi_df = pd.read_csv("data/Air_quality_data_interpolated.csv")
 
 # Standardize column naming based on your usage
 # Note: Using 'Datetime' as the base column

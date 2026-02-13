@@ -3,12 +3,12 @@ import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
 # 1. Load the dataset
-df = pd.read_csv('data/Air_quality_data.csv')
+df = pd.read_csv('data/Air_quality_data_interpolated.csv')
 df['Datetime'] = pd.to_datetime(df['Datetime'])
 df.set_index('Datetime', inplace=True)
 
 # 2. Resample data
-monthly_aqi = df.groupby('City')['AQI'].resample('M').mean().reset_index()
+monthly_aqi = df.groupby('City')['AQI'].resample('ME').mean().reset_index()
 pivot_df = monthly_aqi.pivot(index='Datetime', columns='City', values='AQI')
 
 # 3. ENLARGE THE SCALE: figsize=(25, 12) makes it very wide and tall

@@ -7,7 +7,10 @@ import os
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
 
-file_path = os.path.join(current_directory, 'Air_quality_data.csv')
+file_path = os.path.join(current_directory, 'data', 'Air_quality_data_fixed.csv')
+
+if not os.path.exists(file_path):
+    raise FileNotFoundError(f"File not found at: {file_path}")
 
 df = pd.read_csv(file_path)
 
@@ -42,6 +45,14 @@ plt.xlabel('PCA Component 1')
 plt.ylabel('PCA Component 2')
 plt.colorbar(scatter, label='Cluster Group')
 plt.grid(True)
+
+# Save the figure as PNG
+output_directory = os.path.join(current_directory, 'outputs')
+os.makedirs(output_directory, exist_ok=True)
+output_path = os.path.join(output_directory, 'city_clusters.png')
+plt.savefig(output_path, dpi=300, bbox_inches='tight')
+print(f"\nPlot saved as PNG at: {output_path}")
+
 plt.show()
 
 print("Final Clustering Groups:")

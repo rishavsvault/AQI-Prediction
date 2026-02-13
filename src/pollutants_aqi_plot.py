@@ -5,7 +5,7 @@ import matplotlib.ticker as ticker
 
 # 1. Load the dataset
 # Ensure the path matches your local file location
-df = pd.read_csv('data/Air_quality_data.csv')
+df = pd.read_csv('data/Air_quality_data_interpolated.csv')
 df['Datetime'] = pd.to_datetime(df['Datetime'])
 df.set_index('Datetime', inplace=True)
 

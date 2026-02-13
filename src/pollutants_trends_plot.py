@@ -4,7 +4,7 @@ import matplotlib.dates as mdates
 import matplotlib.ticker as ticker
 
 # 1. Load the dataset
-df = pd.read_csv('data/Air_quality_data.csv')
+df = pd.read_csv('data/Air_quality_data_interpolated.csv')
 df['Datetime'] = pd.to_datetime(df['Datetime'])
 
 pollutants = ['PM2.5', 'PM10', 'NO', 'NO2', 'NOx', 'NH3', 'CO', 'SO2', 'O3']
