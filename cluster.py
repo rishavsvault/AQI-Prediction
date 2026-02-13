@@ -7,10 +7,12 @@ import os
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
 
-file_path = os.path.join(current_directory, 'data', 'Air_quality_data_fixed.csv')
+file_path = os.path.join(current_directory, 'data', 'Air_quality_data_interpolated.csv')
 
 if not os.path.exists(file_path):
     raise FileNotFoundError(f"File not found at: {file_path}")
+file_path = os.path.join(current_directory, 'data', 'Air_quality_data_interpolated.csv')
+
 
 df = pd.read_csv(file_path)
 
