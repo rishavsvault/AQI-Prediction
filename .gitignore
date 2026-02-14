@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environment
+.venv/
+
+# Model files (optional — keep if team wants)
+# *.pkl
+
+# OS
+.DS_Store
+Thumbs.db
