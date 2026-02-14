@@ -43,7 +43,7 @@ for city in cities:
     plt.suptitle(f"{city} - AQI vs All Pollutants (2015-2023)", fontsize=16)
     plt.tight_layout(rect=[0, 0, 1, 0.96])
 
-    plt.savefig(f"outputs/{city}_AQI_vs_all_parameters.png")
+    plt.savefig(f"plots/{city}_AQI_vs_all_parameters.png")
     plt.close()
 
 print("All 5 city plots generated successfully!")

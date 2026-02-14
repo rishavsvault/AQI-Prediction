@@ -44,5 +44,5 @@ plt.yticks(fontsize=12)
 plt.tight_layout()
 
 # 5. Save with high resolution (DPI)
-plt.savefig('aqi_enlarged_with_dots.png', dpi=300, bbox_inches='tight')
+plt.savefig('plots/aqi_enlarged_with_dots.png', dpi=300, bbox_inches='tight')
 plt.show()

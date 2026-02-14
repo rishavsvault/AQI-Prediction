@@ -20,7 +20,7 @@ for pollutant in pollutants:
         city_data.set_index('Datetime', inplace=True)
         
         # Calculate Monthly Average
-        monthly_avg = city_data[pollutant].resample('M').mean()
+        monthly_avg = city_data[pollutant].resample('ME').mean()
         
         # Plotting with hollow markers and thinner lines
         plt.plot(monthly_avg.index, monthly_avg, 
@@ -62,7 +62,7 @@ for pollutant in pollutants:
     plt.tight_layout()
 
     # 6. Save the PNG
-    plt.savefig(f'{pollutant}_trends_2015_2024.png', dpi=300, bbox_inches='tight')
+    plt.savefig(f'plots/{pollutant}_trends_2015_2024.png', dpi=300, bbox_inches='tight')
     plt.close()
 
 print("Clean overlapping graphs generated for all pollutants.")
