@@ -109,7 +109,7 @@ class ManualRandomForest:
 # 5. DATA LOADING & PREPROCESSING
 # ==========================================
 print("Loading CSV and preparing data...")
-df = pd.read_csv("../Data/Air_quality_data.csv")
+df = pd.read_csv("data/Air_quality_data_interpolated.csv")
 
 # Clean Data
 df = df.dropna()
